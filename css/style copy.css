@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  /*overflow-x: hidden;*/
+}
+body {
+  padding: 0;
+  margin: 0;
+  /*font-family: "Roboto", sans-serif;*/
+  /*background-color: #34353b;*/
+}
+.h1 {
+  padding-top: 40px;
+  font-size: 56px;
+  font-weight: 700;
+  font-family: "Libre Baskerville", serif;
+}
+
+.container .description {
+  display: flex;
+  align-items: start;
+}
+
+.container .description .line {
+  height: 2.5px;
+  width: 400px;
+  background-color: #fec86a;
+  margin-right: 32px;
+}
+
+.container .description p span {
+  color: #fec86a;
+}
+
+/*Skill- seccion*/
+
+
+.container .line {
+  height: 2.5px;
+  width: 60px;
+  background-color: #fec86a;
+  margin-right: 32px;
+}
+.cards {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 2.5vh;
+}
+
+.skill-card {
+  height: 20vw;
+  width: 20vw;
+  background-color: #3d3e42;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5vh;
+  transition: all ease 0.5s;
+}
+
+.skill-card:hover {
+  background-color: #fec86a;
+}
+
+.skill-card img {
+  height: 7.5vw;
+  width: 7.5vw;
+  object-fit: contain;
+}
+
+.skill-card h2 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #fbfbfb;
+}
+/*Portafolio- seccion*/
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 100px;
+}
+
+.portfolio h1 {
+  font-size: 56px;
+  font-weight: 700;
+  color: #fbfbfb;
+  font-family: "Libre Baskerville", serif;
+}
+
+.portfolio-cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-top: 50px;
+  gap: 2.5vh;
+  justify-content: center;
+}
+
+.portfolio-card {
+  position: relative;
+  height: 30vw;
+  width: 30vw;
+  background-color: #3d3e42;
+  border-radius: 20px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5vh;
+  transition: all ease 0.5s;
+}
+
+.portfolio-card img {
+  position: relative;
+  height: 30vw;
+  width: 30vw;
+  object-fit: cover;
+}
+
+.portfolio-card .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 2.5vh;
+  height: 30vw;
+  width: 30vw;
+  background-color: #34353ba2;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  opacity: 0;
+  transition: all ease 0.5s;
+}
+
+.portfolio-card .overlay h3 {
+  color: #fbfbfb;
+  font-size: 24px;
+}
+
+.portfolio-card .overlay p {
+  color: #fbfbfb;
+  font-size: 16px;
+  text-align: center;
+}
+
+.portfolio-card .overlay button {
+  height: 36px;
+  width: 108px;
+  background-color: #fec86a;
+  border: 1px solid #fec86a;
+  border-radius: 8px;
+  color: #34353b;
+  font-size: 12px;
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+
+.portfolio-card .overlay:hover {
+  opacity: 1;
+}
+
+.portfolio button {
+  margin-top: 50px;
+  height: 48px;
+  width: 144px;
+  background-color: #fec86a;
+  border: 1px solid #fec86a;
+  border-radius: 8px;
+  color: #34353b;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+
+.portfolio button:hover {
+  background-color: #cc9e4e;
+}
+/*Experiencia- seccion*/
+.experience {
+  display: flex;
+  flex-direction: column;
+  /* height: 100vh; */
+  width: 100vw;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.darker-div {
+  background-color: #34353a;
+  /*width: 100vw;*/
+  height: 10vh;
+}
+
+.experience h1 {
+  position: absolute;
+  color: #fbfbfb;
+  font-size: 56px;
+  font-family: "Libre Baskerville", serif;
+  transform: translate(-50%, -50%);
+  top: 10%;
+  left: 15%;
+}
+
+.container .lighter-div {
+  background-color: #3d3e42;
+ /* width: 100vw;*/
+  /* height: 90vh; */
+  padding: 10vh;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.container .lighter-div .exp {
+  height: 30vh;
+  width: 50vw;
+  position: relative;
+  margin-left: 20vh;
+}
+
+.exp h2 {
+  color: #fbfbfb;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.exp h2::before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  color: #fec86a;
+  background-color: #fec86a;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 7.5%;
+  left: -5%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px 5px #fec86a;
+}
+
+.exp-desc::before {
+  content: "";
+  height: 190px;
+  width: 2.5px;
+  background-color: #fbfbfb;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 55%;
+  left: -5%;
+}
+.exp-desc h3 {
+  color: #fbfbfb;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.exp-desc p {
+  color: #fbfbfb;
+  font-size: 16;
+  font-weight: 400;
+}
+/*contact- seccion*/
+.contact-me {
+  width: 100vw;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-me h1 {
+  font-size: 56px;
+  color: #fbfbfb;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+}
+
+.contact {
+  display: flex;
+  gap: 24px;
+}
+
+.contact-card {
+  background-color: #fec86a;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  gap: 10px;
+  margin-top: 7.5vh;
+}
