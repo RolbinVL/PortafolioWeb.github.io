@@ -19,24 +19,14 @@ darkModeToggle.addEventListener('change', () => {
     }
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    const menuItems = document.querySelectorAll('#menu a');
+    const checkbox = document.getElementById('click');
 
-var swiper = new swiper(".swiper", {
-    effect: "coverflow",
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: 2,
-    speed: 600,
-    coverflowEffect: {
-      rotate: 0,
-      stretch: 0,
-      depth: 100,
-      modifier: 3,
-      slideShadows: true,
-    },
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: false,
-    },
-  });
+    menuItems.forEach(item => {
+        item.addEventListener('click', () => {
+            checkbox.checked = false; // Cierra el menú
+        });
+    });
+});
     

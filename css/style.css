@@ -20,10 +20,6 @@ body {
 .container {
     padding: 0 8.4rem;
 }
-.containerExp {
-    justify-content: center;
-}
-
 .img-w {
     width: 100%;
 }
@@ -51,8 +47,8 @@ header {
     animation: leftSideAni 1s ease forwards;
 }
 .logo .svgLogo{
-    height: 3vw;
-    width: 3vw;
+    height: 5vw;  /* Ajusta el tamaño según tus preferencias */
+    width: 5vw;   /* Ajusta el tamaño según tus preferencias */
     object-fit: contain;
 }
 .logo a {
